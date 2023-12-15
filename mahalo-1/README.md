@@ -25,7 +25,11 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Linux_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Darwin_aarch64.tar.gz
+
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia

@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [initia@v0.1.2-beta.10](https://github.com/initia-labs/initia/releases/tag/v0.1.2-beta.10) |
+| 0~      | [initia@v0.1.2-beta.11](https://github.com/initia-labs/initia/releases/tag/v0.1.2-beta.11) |
 
 ## Prerequisites
 
@@ -25,26 +25,26 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.10_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Darwin_aarch64.tar.gz
 
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.1.2-beta.10
+$ git checkout v0.1.2-beta.11
 $ make install
 
 $ initiad version --long
-build_tags: netgo ledger,
-commit: 03ddf9c99d6d6972ef2d2b1f7cbdb0a295ffc24e
+build_tags: netgo,ledger
+commit: 35d6691a392c67e54239d893c3db42efb05dd94f
 cosmos_sdk_version: v0.47.6
-go: go version go1.21.5 linux/amd64
+go: go version go1.21.5 darwin/arm64
 name: initia
 server_name: initiad
-version: v0.1.2-beta.10
+version: v0.1.2-beta.11
 
 $ initiad init [moniker] --chain-id mahalo-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json

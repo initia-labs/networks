@@ -2,13 +2,13 @@
 
 Testnet for Initia L2 with move vm.
 
-- The genesis event for minimove-1 testnet started at **2023-12-15T07:13:33.525952823Z (UTC)**
+- The genesis event for minimove-1 testnet started at **2024-01-18T08:00:00Z (UTC)**
 
 ## Binaries
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [minimove@v0.1.1-beta.0](https://github.com/initia-labs/minimove/releases/tag/v0.1.1-beta.0) |
+| 0~      | [minimove@v0.2.0-beta.5](https://github.com/initia-labs/minimove/releases/tag/v0.2.0-beta.5) |
 
 ## Prerequisites
 
@@ -25,26 +25,25 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.1.1-beta.0_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.1.1-beta.0_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.1.1-beta.0_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.1.1-beta.0_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Darwin_aarch64.tar.gz
 
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/minimove
 $ cd minimove
-$ git checkout v0.1.1-beta.0
+$ git checkout v0.2.0-beta.5
 $ make install
 
 $ minitiad version --long
-build_tags: netgo,ledger
-commit: c7cc00c79b35e301f5c40f0fe6491014785cd9fc
-cosmos_sdk_version: v0.47.6
-go: go version go1.21.5 darwin/arm64
+commit: dd575fd27e9cd22f33a308242c75a7e945ef23d6
+cosmos_sdk_version: v0.0.0-20240116115600-110a2328c217
+go: go version go1.21.5 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.1.1-beta.0
+version: v0.2.0-beta.5
 
 $ minitiad init [moniker] --chain-id minimove-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json
@@ -59,5 +58,5 @@ $ minitiad start
 ### Known Peers
 
 ```sh
-57755dce19844d55c751edba37b74b16931e7927@34.142.143.85:26656
+11c79a41511fc3804f9e5392a0311c45a1f91396@34.142.143.85:26656
 ```

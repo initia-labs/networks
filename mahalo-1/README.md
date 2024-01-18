@@ -2,13 +2,13 @@
 
 Testnet for Initia.
 
-- The genesis event for Mahalo-1 testnet started at **2023-12-14T09:31:45.312687969Z (UTC)**
+- The genesis event for Mahalo-1 testnet started at **2024-01-18T08:00:00Z (UTC)**
 
 ## Binaries
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [initia@v0.1.2-beta.11](https://github.com/initia-labs/initia/releases/tag/v0.1.2-beta.11) |
+| 0~      | [initia@v0.2.0-beta.5](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.5) |
 
 ## Prerequisites
 
@@ -25,26 +25,25 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.1.2-beta.11_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Darwin_aarch64.tar.gz
 
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.1.2-beta.11
+$ git checkout v0.2.0-beta.5
 $ make install
 
 $ initiad version --long
-build_tags: netgo,ledger
-commit: 35d6691a392c67e54239d893c3db42efb05dd94f
-cosmos_sdk_version: v0.47.6
-go: go version go1.21.5 darwin/arm64
+commit: 2ca3c8179e69b494b5c02e1edd10ab0386ea35d9
+cosmos_sdk_version: v0.0.0-20240116115600-110a2328c217
+go: go version go1.21.5 linux/amd64
 name: initia
 server_name: initiad
-version: v0.1.2-beta.11
+version: v0.2.0-beta.5
 
 $ initiad init [moniker] --chain-id mahalo-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json
@@ -76,5 +75,5 @@ initiad tx mstaking create-validator \
 ### Known Peers
 
 ```sh
-12967fbee530ab012f78b11a5b6587a8b7f8846d@34.143.171.2:26656
+1b11f3ddc25d97fbe7f96fc4caec4c34fb26e6fa@34.143.171.2:26656
 ```

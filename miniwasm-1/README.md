@@ -2,13 +2,13 @@
 
 Testnet for Initia L2 with wasm vm.
 
-- The genesis event for miniwasm-1 testnet started at **2023-12-15T07:06:48.908997863Z (UTC)**
+- The genesis event for miniwasm-1 testnet started at **2024-01-18T08:00:00Z (UTC)**
 
 ## Binaries
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [miniwasm@v0.1.1-beta.0](https://github.com/initia-labs/miniwasm/releases/tag/v0.1.1-beta.0) |
+| 0~      | [miniwasm@v0.2.0-beta.1](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.0-beta.1) |
 
 ## Prerequisites
 
@@ -25,26 +25,25 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/minitia_v0.1.1-beta.0_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/minitia_v0.1.1-beta.0_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/minitia_v0.1.1-beta.0_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/minitia_v0.1.1-beta.0_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.1_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.1_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.1_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.0-beta.1_Darwin_aarch64.tar.gz
 
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/miniwasm
 $ cd miniwasm
-$ git checkout v0.1.1-beta.0
+$ git checkout v0.2.0-beta.1
 $ make install
 
 $ minitiad version --long
-build_tags: netgo,ledger
-commit: e506c5058d8e411505576883e6289048ec245803
-cosmos_sdk_version: v0.47.6
-go: go version go1.21.5 darwin/arm64
+commit: da4f325df97a935a03491897b5885a9186e8034f
+cosmos_sdk_version: v0.0.0-20240116115600-110a2328c217
+go: go version go1.21.5 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.1.1-beta.0
+version: v0.2.0-beta.1
 
 $ minitiad init [moniker] --chain-id miniwasm-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json
@@ -59,5 +58,5 @@ $ minitiad start
 ### Known Peers
 
 ```sh
-c0242c5585d93e2d07a3560101df4c5534cfe35e@34.126.113.169:26656
+64c67436eab6307504f8897cde93a517df79294e@34.126.113.169:26656
 ```

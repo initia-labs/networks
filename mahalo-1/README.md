@@ -9,6 +9,7 @@ Testnet for Initia.
 | height  | link  |
 | ------- | ----- |
 | 0~      | [initia@v0.2.0-beta.6.1](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.6.1) |
+| 800000~ | [initia@v0.2.0-beta.7.1](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.7.1) |
 
 ## Prerequisites
 

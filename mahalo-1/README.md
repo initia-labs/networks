@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [initia@v0.2.0-beta.5](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.5) |
+| 0~      | [initia@v0.2.0-beta.6.1](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.6.1) |
 
 ## Prerequisites
 
@@ -25,25 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.5_Darwin_aarch64.tar.gz
-
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.0-beta.5
+$ git checkout v0.2.0-beta.6.1
 $ make install
 
 $ initiad version --long
-commit: 2ca3c8179e69b494b5c02e1edd10ab0386ea35d9
-cosmos_sdk_version: v0.0.0-20240116115600-110a2328c217
+commit: 5adc74952d20c02bf60d79e25cc9cfc48b854302
+cosmos_sdk_version: v0.0.0-20240123082052-77e8b246064a
 go: go version go1.21.5 linux/amd64
 name: initia
 server_name: initiad
-version: v0.2.0-beta.5
+version: v0.2.0-beta.6.1
 
 $ initiad init [moniker] --chain-id mahalo-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json

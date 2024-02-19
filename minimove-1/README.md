@@ -8,7 +8,7 @@ Testnet for Initia L2 with move vm.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [minimove@v0.2.0-beta.5](https://github.com/initia-labs/minimove/releases/tag/v0.2.0-beta.5) |
+| 0~      | [minimove@v0.2.0-beta.5.2](https://github.com/initia-labs/minimove/releases/tag/v0.2.0-beta.5.2) |
 
 ## Prerequisites
 
@@ -25,25 +25,25 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5.2_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5.2_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5.2_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minitia_v0.2.0-beta.5.2_Darwin_aarch64.tar.gz
 
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/minimove
 $ cd minimove
-$ git checkout v0.2.0-beta.5
+$ git checkout v0.2.0-beta.5.2
 $ make install
 
 $ minitiad version --long
-commit: dd575fd27e9cd22f33a308242c75a7e945ef23d6
+commit: e6d16b81e88e31bb284bb6ea4b545609ab16f606
 cosmos_sdk_version: v0.0.0-20240116115600-110a2328c217
 go: go version go1.21.5 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.2.0-beta.5
+version: v0.2.0-beta.5.2
 
 $ minitiad init [moniker] --chain-id minimove-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json

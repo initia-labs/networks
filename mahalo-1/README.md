@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [initia@v0.2.0-beta.6.1](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.6.1) |
+| 0~      | [initia@v0.2.0-beta.6.2](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.6.2) |
 | 800000~ | [initia@v0.2.0-beta.7.1](https://github.com/initia-labs/initia/releases/tag/v0.2.0-beta.7.1) |
 
 ## Prerequisites
@@ -26,24 +26,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.1_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/initia_v0.2.0-beta.6.2_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.0-beta.6.1
+$ git checkout v0.2.0-beta.6.2
 $ make install
 
 $ initiad version --long
-commit: 5adc74952d20c02bf60d79e25cc9cfc48b854302
+commit: 342adad577ff1dede69d03af056952e0f7d07d55
 cosmos_sdk_version: v0.0.0-20240123082052-77e8b246064a
 go: go version go1.21.5 linux/amd64
 name: initia
 server_name: initiad
-version: v0.2.0-beta.6.1
+version: v0.2.0-beta.6.2
 
 $ initiad init [moniker] --chain-id mahalo-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json

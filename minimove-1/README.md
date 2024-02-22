@@ -8,7 +8,8 @@ Testnet for Initia L2 with move vm.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [minimove@v0.2.0-beta.5.2](https://github.com/initia-labs/minimove/releases/tag/v0.2.0-beta.5.2) |
+| 0     ~ 49920 | [minimove@v0.2.0-beta.5.2](https://github.com/initia-labs/minimove/releases/tag/v0.2.0-beta.5.2) |
+| 49921 ~       | [minimove@v0.2.0-beta.6.1](https://github.com/initia-labs/minimove/releases/tag/v0.2.0-beta.6.1) |
 
 ## Prerequisites
 

@@ -8,7 +8,8 @@ Testnet for Initia L2 with wasm vm.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [miniwasm@v0.2.0-beta.2](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.0-beta.2) |
+| 0     ~ 49850 | [miniwasm@v0.2.0-beta.2](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.0-beta.2) |
+| 49851 ~       | [miniwasm@v0.2.0-beta.3](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.0-beta.3) |
 
 ## Prerequisites
 

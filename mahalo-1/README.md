@@ -20,7 +20,7 @@ Testnet for Initia.
 
 ## How to Setup
 
-Install binaries from [here](./binaries/) or you can install from the [source code](https://github.com/initia-labs/initia).
+Install binaries from s3 or you can install from the [source code](https://github.com/initia-labs/initia).
 
 Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-1/genesis.json).
 

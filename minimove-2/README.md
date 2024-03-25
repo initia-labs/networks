@@ -19,7 +19,7 @@ Testnet for Initia L2 with move vm.
 
 ## How to Setup
 
-Install binaries from [here](./binaries/) or you can install from the [source code](https://github.com/initia-labs/minimove).
+Install binaries from s3 or you can install from the [source code](https://github.com/initia-labs/minimove).
 
 Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/minimove-2/genesis.json).
 

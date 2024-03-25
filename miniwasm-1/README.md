@@ -20,7 +20,7 @@ Testnet for Initia L2 with wasm vm.
 
 ## How to Setup
 
-Install binaries from [here](./binaries/) or you can install from the [source code](https://github.com/initia-labs/miniwasm).
+Install binaries from s3 or you can install from the [source code](https://github.com/initia-labs/miniwasm).
 
 Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json).
 

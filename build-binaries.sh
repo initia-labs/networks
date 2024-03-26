@@ -32,9 +32,10 @@ mkdir -p ./"$L1_NETWORK_NAME"/binaries
     && make build \
     && cd ./build \
     && cp ~/go/pkg/mod/github.com/initia-labs/movevm@"$MOVEVM_VERSION"/api/libmovevm.dylib ./ \
-    && tar -czvf initia_"$L1_VERSION"_Darwin_"$ARCH".tar.gz ./initiad libmovevm.dylib \
+    && cp ~/go/pkg/mod/github.com/initia-labs/movevm@"$MOVEVM_VERSION"/api/libcompiler.dylib ./ \
+    && tar -czvf initia_"$L1_VERSION"_Darwin_"$ARCH".tar.gz initiad libmovevm.dylib libcompiler.dylib \
     && mv ./initia_"$L1_VERSION"_Darwin_"$ARCH".tar.gz ../../networks/"$L1_NETWORK_NAME"/binaries/ \
-    && rm -rf ./libmovevm.dylib ./initiad
+    && rm -rf ./libmovevm.dylib ./libcompiler.dylib ./initiad
 )
 
 (
@@ -42,9 +43,10 @@ mkdir -p ./"$L1_NETWORK_NAME"/binaries
     && make build-linux-with-shared-library \
     && cd ./build \
     && mv libmovevm.so libmovevm."$ARCH".so \
-    && tar -czvf initia_"$L1_VERSION"_Linux_"$ARCH".tar.gz ./initiad libmovevm."$ARCH".so \
+    && mv libcompiler.so libcompiler."$ARCH".so \
+    && tar -czvf initia_"$L1_VERSION"_Linux_"$ARCH".tar.gz ./initiad libmovevm."$ARCH".so libcompiler."$ARCH".so \
     && mv ./initia_"$L1_VERSION"_Linux_"$ARCH".tar.gz ../../networks/"$L1_NETWORK_NAME"/binaries/ \
-    && rm -rf ./libmovevm."$ARCH".so ./initiad
+    && rm -rf ./libmovevm."$ARCH".so ./libcompiler."$ARCH".so ./initiad
 )
 
 # minimove
@@ -61,9 +63,10 @@ mkdir -p ./"$MINIMOVE_NETWORK_NAME"/binaries
     && make build \
     && cd ./build \
     && cp ~/go/pkg/mod/github.com/initia-labs/movevm@"$MOVEVM_VERSION"/api/libmovevm.dylib ./ \
-    && tar -czvf minimove_"$MINIMOVE_VERSION"_Darwin_"$ARCH".tar.gz ./minitiad libmovevm.dylib \
+    && cp ~/go/pkg/mod/github.com/initia-labs/movevm@"$MOVEVM_VERSION"/api/libcompiler.dylib ./ \
+    && tar -czvf minimove_"$MINIMOVE_VERSION"_Darwin_"$ARCH".tar.gz minitiad libmovevm.dylib libcompiler.dylib \
     && mv ./minimove_"$MINIMOVE_VERSION"_Darwin_"$ARCH".tar.gz ../../networks/"$MINIMOVE_NETWORK_NAME"/binaries/ \
-    && rm -rf ./libmovevm.dylib ./minitiad
+    && rm -rf ./libmovevm.dylib ./libcompiler.dylib ./minitiad
 )
 
 (
@@ -71,9 +74,10 @@ mkdir -p ./"$MINIMOVE_NETWORK_NAME"/binaries
     && make build-linux-with-shared-library \
     && cd ./build \
     && mv libmovevm.so libmovevm."$ARCH".so \
-    && tar -czvf minimove_"$MINIMOVE_VERSION"_Linux_"$ARCH".tar.gz ./minitiad libmovevm."$ARCH".so \
+    && mv libcompiler.so libcompiler."$ARCH".so \
+    && tar -czvf minimove_"$MINIMOVE_VERSION"_Linux_"$ARCH".tar.gz ./minitiad libmovevm."$ARCH".so libcompiler."$ARCH".so \
     && mv ./minimove_"$MINIMOVE_VERSION"_Linux_"$ARCH".tar.gz ../../networks/"$MINIMOVE_NETWORK_NAME"/binaries/ \
-    && rm -rf ./libmovevm."$ARCH".so ./minitiad
+    && rm -rf ./libmovevm."$ARCH".so ./libcompiler."$ARCH".so ./minitiad
 )
 
 # miniwasm

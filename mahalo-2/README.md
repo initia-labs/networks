@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [initia@v0.2.3](https://github.com/initia-labs/initia/releases/tag/v0.2.3) |
+| 0~      | [initia@v0.2.3-hotfix.1](https://github.com/initia-labs/initia/releases/tag/v0.2.3-hotfix.1) |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3-hotfix.1_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3-hotfix.1_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3-hotfix.1_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/initia_v0.2.3-hotfix.1_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.3
+$ git checkout v0.2.3-hotfix.1
 $ make install
 
 $ initiad version --long
-commit: 9524a798c1842aee00edf9f632d8b92c017bb8be
+commit: c2c24070c619e61f27e5a33a2df417936c8481e1
 cosmos_sdk_version: v0.0.0-20240313050640-ff14560eeb21
 go: go version go1.21.5 darwin/arm64
 name: initia
 server_name: initiad
-version: v0.2.3
+version: v0.2.3-hotfix.1
 
 $ initiad init [moniker] --chain-id mahalo-2
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-2/genesis.json

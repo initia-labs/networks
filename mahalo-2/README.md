@@ -8,7 +8,8 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0~      | [initia@v0.2.3-hotfix.1](https://github.com/initia-labs/initia/releases/tag/v0.2.3-hotfix.1) |
+| 0      ~ 719127 | [initia@v0.2.3](https://github.com/initia-labs/initia/releases/tag/v0.2.3)                   |
+| 719128 ~        | [initia@v0.2.3-hotfix.1](https://github.com/initia-labs/initia/releases/tag/v0.2.3-hotfix.1) |
 
 ## Prerequisites
 

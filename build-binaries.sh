@@ -5,9 +5,9 @@ if [ "$1" != "mahalo-3" ]; then
 fi
 
 if [ "$1" == "mahalo-3" ]; then
-    L1_VERSION="v0.2.6"
-    MINIMOVE_VERSION="v0.2.7"
-    MINIWASM_VERSION="v0.2.8"
+    L1_VERSION="v0.2.7"
+    MINIMOVE_VERSION="v0.2.8"
+    MINIWASM_VERSION="v0.2.9"
     MOVEVM_VERSION="v0.2.7"
     WASMVM_VERSION="v1.5.2"
 

@@ -1,8 +1,8 @@
 {
   "app_name": "minitiad",
   "app_version": "v0.2.13",
-  "genesis_time": "2024-05-09T06:10:16.345554389Z",
-  "chain_id": "minitia-DIkzWI-1",
+  "genesis_time": "2024-05-09T06:52:37.894923473Z",
+  "chain_id": "miniwasm-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {

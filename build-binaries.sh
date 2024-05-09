@@ -1,19 +1,19 @@
 # Argument validation
-if [ "$1" != "mahalo-3" ]; then
+if [ "$1" != "initiation-1" ]; then
     echo "Error: Missing or invalid arguments. Usage: $0 <network>"
     exit 1
 fi
 
-if [ "$1" == "mahalo-3" ]; then
-    L1_VERSION="v0.2.7"
-    MINIMOVE_VERSION="v0.2.8"
-    MINIWASM_VERSION="v0.2.9"
-    MOVEVM_VERSION="v0.2.7"
+if [ "$1" == "initiation-1" ]; then
+    L1_VERSION="v0.2.8"
+    MINIMOVE_VERSION="v0.2.10"
+    MINIWASM_VERSION="v0.2.13"
+    MOVEVM_VERSION="v0.2.8"
     WASMVM_VERSION="v1.5.2"
 
-    L1_NETWORK_NAME="mahalo-3"
-    MINIMOVE_NETWORK_NAME="minimove-3"
-    MINIWASM_NETWORK_NAME="miniwasm-3"
+    L1_NETWORK_NAME="initiation-1"
+    MINIMOVE_NETWORK_NAME="minimove-1"
+    MINIWASM_NETWORK_NAME="miniwasm-1"
 fi
 
 ARCH=$(uname -m | sed -e "s/arm64/aarch64/")

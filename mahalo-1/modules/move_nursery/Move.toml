@@ -1,9 +1,0 @@
-[package]
-name = "MoveNursery"
-version = "1.0.0"
-
-[dependencies]
-MoveStdlib = { local = "../move_stdlib" }
-
-[addresses]
-std = "0x1"

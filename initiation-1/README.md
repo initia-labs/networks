@@ -1,14 +1,14 @@
-# Mahalo-3
+# initiation-1
 
 Testnet for Initia.
 
-- The genesis event for Mahalo-3 testnet started at **2024-04-29T03:09:16.487325519Z (UTC)**
+- The genesis event for initiation-1 testnet started at **2024-05-09T05:00:00Z (UTC)**
 
 ## Binaries
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [initia@v0.2.7](https://github.com/initia-labs/initia/releases/tag/v0.2.7)                   |
+| 0      ~  | [initia@v0.2.8](https://github.com/initia-labs/initia/releases/tag/v0.2.8)                   |
 
 ## Prerequisites
 
@@ -21,31 +21,31 @@ Testnet for Initia.
 
 Install binaries from s3 or you can install from the [source code](https://github.com/initia-labs/initia).
 
-Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-3/genesis.json).
+Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json).
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-3/initia_v0.2.7_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-3/initia_v0.2.7_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-3/initia_v0.2.7_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-3/initia_v0.2.7_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.8_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.7
+$ git checkout v0.2.8
 $ make install
 
 $ initiad version --long
-commit: 34d997c2bf254903e12723faa91253299257fbf0
+commit: c7bbd8297cff7dd3131a93153f6c36ea021c985e
 cosmos_sdk_version: v0.0.0-20240425031032-6bc18cf6e67d
-go: go version go1.22.2 linux/amd64
+go: go version go1.22.3 linux/amd64
 name: initia
 server_name: initiad
-version: v0.2.7
+version: v0.2.8
 
-$ initiad init [moniker] --chain-id mahalo-3
-$ wget https://initia.s3.ap-southeast-1.amazonaws.com/mahalo-3/genesis.json
+$ initiad init [moniker] --chain-id initiation-1
+$ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json
 $ cp genesis.json ~/.initia/config/genesis.json
 
 # This will prevent continuous reconnection try. (default P2P_PORT is 26656)
@@ -75,4 +75,10 @@ initiad tx mstaking create-validator \
 
 ```sh
 1ded63cb0e28012d0104682226e57d967afb78f8@35.247.153.122:26656
+```
+
+### Seed Nodes
+
+```sh
+2692225700832eb9b46c7b3fc6e4dea2ec044a78@10.148.0.12:26656
 ```

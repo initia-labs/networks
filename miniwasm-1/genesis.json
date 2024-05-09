@@ -1,8 +1,8 @@
 {
   "app_name": "minitiad",
-  "app_version": "v0.2.0-beta.0",
-  "genesis_time": "2024-01-18T08:00:00Z",
-  "chain_id": "miniwasm-1",
+  "app_version": "v0.2.13",
+  "genesis_time": "2024-05-09T06:10:16.345554389Z",
+  "chain_id": "minitia-DIkzWI-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {
@@ -35,7 +35,7 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "init1cv89pjhquvqgcy0w3xusy2cku9glzvxd5s9sxm",
+          "address": "init1hvcj9378whwlcw0eh5q20ufx56hz0ankqaxlyg",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -45,6 +45,27 @@
           "address": "init17vjt7ne4t2lvd4ylmlgdg4qeh2vaxc7ec7kgn8",
           "pub_key": null,
           "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "init14wahgs7fm7stwhre50pgd8kff2fmmu8pqnvf3l",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "init1k0n7ck5tw845hrswu2u53vscpfwxwgcv09axym",
+          "pub_key": null,
+          "account_number": "3",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "init13rqpwycyhepvxgfmzucat5t6v0veftnf684ua6",
+          "pub_key": null,
+          "account_number": "4",
           "sequence": "0"
         }
       ]
@@ -59,30 +80,27 @@
       },
       "balances": [
         {
-          "address": "init1cv89pjhquvqgcy0w3xusy2cku9glzvxd5s9sxm",
-          "coins": [
-            {
-              "denom": "umin",
-              "amount": "100000000"
-            }
-          ]
+          "address": "init13rqpwycyhepvxgfmzucat5t6v0veftnf684ua6",
+          "coins": []
+        },
+        {
+          "address": "init14wahgs7fm7stwhre50pgd8kff2fmmu8pqnvf3l",
+          "coins": []
+        },
+        {
+          "address": "init1k0n7ck5tw845hrswu2u53vscpfwxwgcv09axym",
+          "coins": []
+        },
+        {
+          "address": "init1hvcj9378whwlcw0eh5q20ufx56hz0ankqaxlyg",
+          "coins": []
         },
         {
           "address": "init17vjt7ne4t2lvd4ylmlgdg4qeh2vaxc7ec7kgn8",
-          "coins": [
-            {
-              "denom": "umin",
-              "amount": "100000000"
-            }
-          ]
+          "coins": []
         }
       ],
-      "supply": [
-        {
-          "denom": "umin",
-          "amount": "200000000"
-        }
-      ],
+      "supply": [],
       "denom_metadata": [],
       "send_enabled": []
     },
@@ -101,14 +119,10 @@
       "registered_counterparty_payees": [],
       "forward_relayers": []
     },
-    "fetchprice": {
-      "consumer_genesis_state": {
-        "port_id": "fetchprice-consumer",
-        "currency_prices": []
-      },
-      "provider_genesis_state": {
-        "port_id": "fetchprice-provider"
-      }
+    "forwarding": {
+      "num_of_accounts": {},
+      "num_of_forwards": {},
+      "total_forwarded": {}
     },
     "group": {
       "group_seq": "0",
@@ -127,8 +141,7 @@
         "clients_metadata": [],
         "params": {
           "allowed_clients": [
-            "06-solomachine",
-            "07-tendermint"
+            "*"
           ]
         },
         "create_localhost": false,
@@ -150,8 +163,23 @@
         "send_sequences": [],
         "recv_sequences": [],
         "ack_sequences": [],
-        "next_channel_sequence": "0"
+        "next_channel_sequence": "0",
+        "params": {
+          "upgrade_timeout": {
+            "height": {
+              "revision_number": "0",
+              "revision_height": "0"
+            },
+            "timestamp": "600000000000"
+          }
+        }
       }
+    },
+    "ibchooks": {
+      "params": {
+        "default_allowed": false
+      },
+      "acls": []
     },
     "interchainaccounts": {
       "controller_genesis_state": {
@@ -203,23 +231,55 @@
         "max_validators": 100,
         "historical_entries": 10000,
         "min_gas_prices": [],
-        "bridge_executor": "init17vjt7ne4t2lvd4ylmlgdg4qeh2vaxc7ec7kgn8"
+        "bridge_executor": "init17vjt7ne4t2lvd4ylmlgdg4qeh2vaxc7ec7kgn8",
+        "admin": "init1hvcj9378whwlcw0eh5q20ufx56hz0ankqaxlyg",
+        "fee_whitelist": [
+          "init1hvcj9378whwlcw0eh5q20ufx56hz0ankqaxlyg",
+          "init17vjt7ne4t2lvd4ylmlgdg4qeh2vaxc7ec7kgn8",
+          "init13rqpwycyhepvxgfmzucat5t6v0veftnf684ua6"
+        ]
       },
       "last_validator_powers": [],
       "validators": [
         {
           "moniker": "operator",
-          "operator_address": "initvaloper1cv89pjhquvqgcy0w3xusy2cku9glzvxdq4ufgt",
+          "operator_address": "initvaloper1yf26pys4m4rap6nmphrcth3eeypk46m7zep685",
           "consensus_pubkey": {
             "@type": "/cosmos.crypto.ed25519.PubKey",
-            "key": "Vc1SQxu8MFRswSq2TQysZkJJ/qY8HxazvLr9v1fhuhg="
+            "key": "F/bSs35lVQI+Gd0z00pwy1oCCHzCpN4QApHxA61ILrc="
           },
           "cons_power": "1"
         }
       ],
       "exported": false,
       "next_l2_sequence": "1",
-      "finalized_l1_sequences": []
+      "finalized_l1_sequences": [],
+      "bridge_info": null
+    },
+    "oracle": {
+      "currency_pair_genesis": [
+        {
+          "currency_pair": {
+            "Base": "TIMESTAMP",
+            "Quote": "NANOSECOND"
+          },
+          "currency_pair_price": null,
+          "nonce": "0"
+        }
+      ]
+    },
+    "packetfowardmiddleware": {
+      "params": {
+        "fee_percentage": "0.000000000000000000"
+      },
+      "in_flight_packets": {}
+    },
+    "tokenfactory": {
+      "params": {
+        "denom_creation_fee": [],
+        "denom_creation_gas_consume": "1000000"
+      },
+      "factory_denoms": []
     },
     "transfer": {
       "port_id": "transfer",
@@ -248,7 +308,7 @@
     "params": {
       "block": {
         "max_bytes": "22020096",
-        "max_gas": "200000000"
+        "max_gas": "-1"
       },
       "evidence": {
         "max_age_num_blocks": "100000",

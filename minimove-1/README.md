@@ -2,13 +2,13 @@
 
 Testnet for Initia.
 
-- The genesis event for minimove-1 testnet started at **2024-05-09T06:07:48.502488866Z (UTC)**
+- The genesis event for minimove-1 testnet started at **2024-05-10T07:46:31.14938359Z (UTC)**
 
 ## Binaries
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [minimove@v0.2.10](https://github.com/initia-labs/minimove/releases/tag/v0.2.10)                   |
+| 0      ~  | [minimove@v0.2.11](https://github.com/initia-labs/minimove/releases/tag/v0.2.11)                   |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install minitiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.10_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.10_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.10_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.10_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/minimove
 $ cd minimove
-$ git checkout v0.2.10
+$ git checkout v0.2.11
 $ make install
 
 $ minitiad version --long
-commit: ce3bd2f7d3ff090c10c7f07908733d92541ed213
+commit: d4cbda27c78762b74553f05cd41ef86fc534b42c
 cosmos_sdk_version: v0.0.0-20240502043911-a4bdb8e06769
 go: go version go1.22.3 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.2.10
+version: v0.2.11
 
 $ minitiad init [moniker] --chain-id minimove-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json
@@ -57,5 +57,5 @@ $ minitiad start
 ### Known Peers
 
 ```sh
-5190926e2d03f1384783a19854352688b1ebd463@35.186.158.50:26656
+c4779ba03f7dc74f6349307361884c26bdda9abd@35.186.158.50:26656
 ```

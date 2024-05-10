@@ -2,13 +2,13 @@
 
 Testnet for Initia.
 
-- The genesis event for miniwasm-1 testnet started at **2024-05-09T06:52:37.894923473Z (UTC)**
+- The genesis event for miniwasm-1 testnet started at **2024-05-10T07:48:02.731038472Z (UTC)**
 
 ## Binaries
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [miniwasm@v0.2.13](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.13)                   |
+| 0      ~  | [miniwasm@v0.2.14](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.14)                   |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install minitiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.13_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/miniwasm
 $ cd miniwasm
-$ git checkout v0.2.13
+$ git checkout v0.2.14
 $ make install
 
 $ minitiad version --long
-commit: e7aa29016058261a8c3eac61eda2a3cbebe05903
+commit: 3a13dcd8dcc8b69784ad4c20d0c101e3d4c39894
 cosmos_sdk_version: v0.0.0-20240502043911-a4bdb8e06769
 go: go version go1.22.3 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.2.13
+version: v0.2.14
 
 $ minitiad init [moniker] --chain-id miniwasm-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json
@@ -57,5 +57,5 @@ $ minitiad start
 ### Known Peers
 
 ```sh
-945fa00c8256d41f69f851080583dfabdeb5898d@35.240.203.177:26656
+2e6b88ba77ccf51606960aea4ea4a569def85366@35.240.203.177:26656
 ```

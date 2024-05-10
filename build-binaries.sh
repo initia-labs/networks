@@ -5,9 +5,9 @@ if [ "$1" != "initiation-1" ]; then
 fi
 
 if [ "$1" == "initiation-1" ]; then
-    L1_VERSION="v0.2.8"
-    MINIMOVE_VERSION="v0.2.10"
-    MINIWASM_VERSION="v0.2.13"
+    L1_VERSION="v0.2.9"
+    MINIMOVE_VERSION="v0.2.11"
+    MINIWASM_VERSION="v0.2.14"
     MOVEVM_VERSION="v0.2.8"
     WASMVM_VERSION="v1.5.2"
 

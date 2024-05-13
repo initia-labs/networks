@@ -80,5 +80,5 @@ initiad tx mstaking create-validator \
 ### Seed Nodes
 
 ```sh
-e5379634dd3a7604feb186faee070a5f8b60d8f8@34.142.181.82:26656
+2eaa272622d1ba6796100ab39f58c75d458b9dbc@34.142.181.82:26656
 ```

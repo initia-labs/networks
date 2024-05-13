@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [minimove@v0.2.11](https://github.com/initia-labs/minimove/releases/tag/v0.2.11)                   |
+| 0      ~  | [minimove@v0.2.12](https://github.com/initia-labs/minimove/releases/tag/v0.2.12)                   |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install minitiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.11_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/minimove_v0.2.12_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/minimove
 $ cd minimove
-$ git checkout v0.2.11
+$ git checkout v0.2.12
 $ make install
 
 $ minitiad version --long
-commit: d4cbda27c78762b74553f05cd41ef86fc534b42c
+commit: 663279b4fbb909fb0f4f03dc99de709f7c4e3bbf
 cosmos_sdk_version: v0.0.0-20240502043911-a4bdb8e06769
 go: go version go1.22.3 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.2.11
+version: v0.2.12
 
 $ minitiad init [moniker] --chain-id minimove-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json

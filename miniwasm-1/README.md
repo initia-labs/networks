@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [miniwasm@v0.2.14](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.14)                   |
+| 0      ~  | [miniwasm@v0.2.15](https://github.com/initia-labs/miniwasm/releases/tag/v0.2.15)                   |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install minitiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.14_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.15_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.15_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.15_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/miniwasm_v0.2.15_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/miniwasm
 $ cd miniwasm
-$ git checkout v0.2.14
+$ git checkout v0.2.15
 $ make install
 
 $ minitiad version --long
-commit: 3a13dcd8dcc8b69784ad4c20d0c101e3d4c39894
+commit: aa7be7b36bf4299874a0332d9dd205f9d7d2a8eb
 cosmos_sdk_version: v0.0.0-20240502043911-a4bdb8e06769
 go: go version go1.22.3 linux/amd64
 name: minitia
 server_name: minitiad
-version: v0.2.14
+version: v0.2.15
 
 $ minitiad init [moniker] --chain-id miniwasm-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/miniwasm-1/genesis.json

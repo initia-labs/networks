@@ -81,4 +81,5 @@ initiad tx mstaking create-validator \
 
 ```sh
 2eaa272622d1ba6796100ab39f58c75d458b9dbc@34.142.181.82:26656
+c28827cb96c14c905b127b92065a3fb4cd77d7f6@testnet-seeds.whispernode.com:25756
 ```

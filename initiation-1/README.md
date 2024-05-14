@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [initia@v0.2.11](https://github.com/initia-labs/initia/releases/tag/v0.2.11)                   |
+| 0      ~  | [initia@v0.2.12](https://github.com/initia-labs/initia/releases/tag/v0.2.12)                   |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.11_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.11_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.11_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.11_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.11
+$ git checkout v0.2.12
 $ make install
 
 $ initiad version --long
-commit: fdb6df3c86fe6911cc02830b4dd59ac0ea4aedea
+commit: eb3eda02d2814161181a1846aba91bae03cafd4f
 cosmos_sdk_version: v0.0.0-20240425031032-6bc18cf6e67d
 go: go version go1.22.3 linux/amd64
 name: initia
 server_name: initiad
-version: v0.2.11
+version: v0.2.12
 
 $ initiad init [moniker] --chain-id initiation-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json

@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [initia@v0.2.12](https://github.com/initia-labs/initia/releases/tag/v0.2.12)                   |
+| 0      ~  | [initia@v0.2.14](https://github.com/initia-labs/initia/releases/tag/v0.2.14)                   |
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.12
+$ git checkout v0.2.14
 $ make install
 
 $ initiad version --long
@@ -42,7 +42,7 @@ cosmos_sdk_version: v0.0.0-20240425031032-6bc18cf6e67d
 go: go version go1.22.3 linux/amd64
 name: initia
 server_name: initiad
-version: v0.2.12
+version: v0.2.14
 
 $ initiad init [moniker] --chain-id initiation-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json
@@ -75,6 +75,7 @@ initiad tx mstaking create-validator \
 
 ```sh
 093e1b89a498b6a8760ad2188fbda30a05e4f300@35.240.207.217:26656
+e0ee9a5608aa4898c6e81069a24a6cf341e78ba0@135.181.134.148:22656
 ```
 
 ### Seed Nodes

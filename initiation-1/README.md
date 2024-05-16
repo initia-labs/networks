@@ -8,7 +8,7 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [initia@v0.2.12](https://github.com/initia-labs/initia/releases/tag/v0.2.12)                   |
+| 0      ~  | [initia@v0.2.14](https://github.com/initia-labs/initia/releases/tag/v0.2.14)                   |
 
 ## Prerequisites
 
@@ -25,24 +25,24 @@ Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/
 
 ```shell
 # you can install initiad from the s3
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Linux_x86_64.tar.gz
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Darwin_x86_64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Linux_aarch64.tar.gz 
-# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.12_Darwin_aarch64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.14_Linux_x86_64.tar.gz
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.14_Darwin_x86_64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.14_Linux_aarch64.tar.gz 
+# $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/initia_v0.2.14_Darwin_aarch64.tar.gz
 
 # or, build from the source
 $ git clone https://github.com/initia-labs/initia
 $ cd initia
-$ git checkout v0.2.12
+$ git checkout v0.2.14
 $ make install
 
 $ initiad version --long
-commit: eb3eda02d2814161181a1846aba91bae03cafd4f
-cosmos_sdk_version: v0.0.0-20240425031032-6bc18cf6e67d
+commit: bc8eaa6e840dd2e9c4eaa5dfbf90e27458173ac1
+cosmos_sdk_version: v0.0.0-20240514173001-c037b6c44d98
 go: go version go1.22.3 linux/amd64
 name: initia
 server_name: initiad
-version: v0.2.12
+version: v0.2.14
 
 $ initiad init [moniker] --chain-id initiation-1
 $ wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json
@@ -82,4 +82,19 @@ initiad tx mstaking create-validator \
 ```sh
 2eaa272622d1ba6796100ab39f58c75d458b9dbc@34.142.181.82:26656
 c28827cb96c14c905b127b92065a3fb4cd77d7f6@testnet-seeds.whispernode.com:25756
+```
+
+### Address Book
+
+We highly recommend to copy addrbook.json to $INITIA_HOME/config/addrbook.json for fast peer connection.
+
+Download the genesis from [here](https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/addrbook.json).
+
+```bash
+# stop initiad
+
+wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/addrbook.json
+mv addrbook.json ~/.initia/config/addrbook.json
+
+# start initiad
 ```

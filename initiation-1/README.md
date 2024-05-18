@@ -76,6 +76,7 @@ initiad tx mstaking create-validator \
 ```sh
 093e1b89a498b6a8760ad2188fbda30a05e4f300@35.240.207.217:26656
 2c729d33d22d8cdae6658bed97b3097241ca586c@195.14.6.129:26019
+aee7083ab11910ba3f1b8126d1b3728f13f54943@initia-testnet-peer.itrocket.net:11656
 ```
 
 ### Seed Nodes
@@ -83,6 +84,7 @@ initiad tx mstaking create-validator \
 ```sh
 2eaa272622d1ba6796100ab39f58c75d458b9dbc@34.142.181.82:26656
 c28827cb96c14c905b127b92065a3fb4cd77d7f6@testnet-seeds.whispernode.com:25756
+cd69bcb00a6ecc1ba2b4a3465de4d4dd3e0a3db1@initia-testnet-seed.itrocket.net:51656
 ```
 
 ### Address Book
@@ -104,3 +106,4 @@ mv addrbook.json ~/.initia/config/addrbook.json
 
 - <https://polkachu.com/testnets/initia/snapshots>
 - <https://bwarelabs.com/snapshots/initia>
+- <https://itrocket.net/services/testnet/initia/#snap>

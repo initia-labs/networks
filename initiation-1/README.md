@@ -104,3 +104,4 @@ mv addrbook.json ~/.initia/config/addrbook.json
 
 - <https://polkachu.com/testnets/initia/snapshots>
 - <https://bwarelabs.com/snapshots/initia>
+- <https://docs.huginn.tech/testnet-guides/initia/snapshot>

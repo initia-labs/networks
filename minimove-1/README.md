@@ -49,7 +49,7 @@ $ wget https://initia.s3.ap-southeast-1.amazonaws.com/minimove-1/genesis.json
 $ cp genesis.json ~/.minitia/config/genesis.json
 
 # This will prevent continuous reconnection try. (default P2P_PORT is 26656)
-$ sed -i -e 's/external_address = \"\"/external_address = \"'$(curl httpbin.org/ip | jq -r .origin)':26656\"/g' ~/.initia/config/config.toml
+$ sed -i -e 's/external_address = \"\"/external_address = \"'$(curl httpbin.org/ip | jq -r .origin)':26656\"/g' ~/.minitia/config/config.toml
 
 $ minitiad start
 ```

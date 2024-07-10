@@ -77,6 +77,7 @@ initiad tx mstaking create-validator \
 ```sh
 093e1b89a498b6a8760ad2188fbda30a05e4f300@35.240.207.217:26656
 2c729d33d22d8cdae6658bed97b3097241ca586c@195.14.6.129:26019
+1c670728944f8f549a63bb2985296f8354cf735c@initia-t-rpc.noders.services:32656
 ```
 
 ### Seed Nodes
@@ -105,3 +106,4 @@ mv addrbook.json ~/.initia/config/addrbook.json
 
 - <https://polkachu.com/testnets/initia/snapshots>
 - <https://bwarelabs.com/snapshots/initia>
+- <https://noders.services/testnet-networks/initia/snapshot>

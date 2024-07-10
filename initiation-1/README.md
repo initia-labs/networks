@@ -57,6 +57,26 @@ $ initiad start
 
 ## How to setup validator
 
+Once synchronization is complete, you can try "Validator Creation". Run the following command and if "catching_up: false" then the synchronization is complete
+
+```sh
+curl http://localhost:26657/status | jq
+
+{
+  "jsonrpc": "2.0",
+  "id": -1,
+  "result": {
+    ...
+    "sync_info": {
+      ...
+      "earliest_block_time": "2024-05-10T07:00:00Z",
+      "catching_up": false # true if not complete
+    },
+    ...
+  }
+}
+```
+
 ### Validator Creation
 
 ```sh

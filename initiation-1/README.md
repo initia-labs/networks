@@ -8,7 +8,8 @@ Testnet for Initia.
 
 | height  | link  |
 | ------- | ----- |
-| 0      ~  | [initia@v0.2.15](https://github.com/initia-labs/initia/releases/tag/v0.2.15)                   |
+| 0      ~ 2470000 | [initia@v0.2.15](https://github.com/initia-labs/initia/releases/tag/v0.2.15)                   |
+| 2470000      ~  | [initia@v0.2.23-stage-2](https://github.com/initia-labs/initia/releases/tag/v0.2.23-stage-2)                   |
 
 ## Prerequisites
 

@@ -105,3 +105,4 @@ mv addrbook.json ~/.initia/config/addrbook.json
 
 - <https://polkachu.com/testnets/initia/snapshots>
 - <https://bwarelabs.com/snapshots/initia>
+- <https://docs.nodex.one/networks/testnet/initia/snapshot>

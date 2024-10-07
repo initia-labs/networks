@@ -1,3 +1,5 @@
+# ❗This repository has been archived: see [initia-registry](https://github.com/initia-labs/initia-registry)
+
 # Initia/Minitia Networks Repository
 Welcome to the official repository for the Initia/Minitia networks. This repository is for storing genesis and configuration files necessary to participate in or interact with different stages and versions of the Initia/Minitia blockchain networks.
 
